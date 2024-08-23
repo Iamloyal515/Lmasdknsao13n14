@@ -1,0 +1,585 @@
+@font-face {
+    font-family: ValorantFont;
+    src: url(../fonts/ValFont.ttf);
+}
+@font-face {
+    font-family: Tungsten;
+    src: url(../fonts/Tungsten.ttf);
+}
+
+body {
+    font-family: 'Karla', sans-serif !important;
+}
+a {
+    transition: 0.3s all !Important;
+}
+a:hover {
+    text-decoration: none !Important;
+    color: #FFFFB7;
+}
+.Title {
+    font-family: ValorantFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 141px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.FontValo {
+    font-family: ValorantFont !important;
+}
+.FontTungsten {
+    font-family: Tungsten;
+}
+section#header14-9 {
+    background: url(../imgs/heroImg.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.ExclusiveText {
+    position: absolute;
+    font-family: 'Tungsten';
+    font-style: normal;
+    font-weight: 400;
+    left: 50px;
+    top: 10px;
+    font-size: 256px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #202226;
+}
+
+.product-filter {
+    color: #fff;
+    font-size: 24px;
+    border-radius: 2px;
+    display: inline-block;
+    transition: .2s;
+    font-weight: 800;
+    background: transparent;
+    cursor: pointer;
+}
+.product-subfilter.active {
+    background: #FFB95C;
+}
+.product-subfilter {
+    color: #fff;
+    padding: 0px;
+    font-size: 18px;
+    max-width: 20rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    background: #282f38;
+    padding: 8px 16px;
+    border: none !important;
+    cursor: pointer;
+}
+
+
+
+.ColorChange {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFC16E;
+    height: 75%;
+    z-index: -1;
+}
+.ColorChange img {
+    width: 55%;
+    height: 40px;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+}
+.features-image {
+    background: rgb(128 165 211 / 6%);
+    padding: 0px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+.CutBTN {
+    position: relative;
+}
+.CutBTN:before,
+.CutBTN:after {
+ content: "";
+ position: absolute;
+ left: 0; 
+ right: 0;
+ bottom: 100%;
+ border-bottom: 15px solid #4b40e5;
+ border-left: 15px solid transparent;
+ border-right: 15px solid transparent;
+
+}
+.CutBTN:before{
+	border-left: 15px solid #4b40e5;
+}
+
+.CutBTN:after{
+	border-right: 15px solid #4b40e5;
+}
+.CutBTN:after {
+    bottom: auto;
+    top: 100%;
+    border-bottom: none;
+    border-top: 15px solid #4b40e5;
+}
+
+
+
+
+/* MODAL */
+.modal-dialog, .modal-content {
+    height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* POPUP    POPUP   POPUP   POPUP   POPUP*/
+/* POPUP    POPUP   POPUP   POPUP   POPUP*/
+/* POPUP    POPUP   POPUP   POPUP   POPUP*/
+
+
+div#popup {
+    background: #17191d;
+    color: #fff;
+    padding: 25px;
+    width: fit-content;
+    position: fixed;
+    left: 20px;
+    bottom: 15px;
+    z-index: 1000;
+}
+.popup-header {
+    font-weight: 700;
+    color: var(--AccentColor);
+}
+.PopupBTN {
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.15s all !important;
+}
+
+@media (max-width: 700px) {
+    
+    div#popup {
+        left: 10px !important;
+        width: 85% !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CutBTNS   CutBTNS    CutBTNS    CutBTNS    CutBTNS*/
+/* CutBTNS   CutBTNS    CutBTNS    CutBTNS    CutBTNS*/
+/* CutBTNS   CutBTNS    CutBTNS    CutBTNS    CutBTNS*/
+
+
+#popup-buy {
+    background: #df3d3d;
+}
+#popup-buy:before , #popup-buy:after {
+     border-bottom: 15px solid #df3d3d;
+}
+#popup-buy:before{
+	border-left: 15px solid #df3d3d;
+}
+#popup-buy:after{
+	border-right: 15px solid #df3d3d;
+}
+#popup-buy:after {
+    bottom: auto;
+    top: 100%;
+    border-bottom: none;
+    border-top: 15px solid #df3d3d;
+}
+#popup-buy:hover {
+    transform: translateX(5px);
+}
+
+#popup-close {
+    position: absolute;
+    right: -35px;
+    top: -35px;
+    background: #ffffb7;
+    color: #333;
+}
+#popup-close:hover {
+    transform: translateX(-15px);
+}   
+.PopupBTN:before , .PopupBTN:after {
+     border-bottom: 15px solid #ffffb7;
+}
+.PopupBTN:before{
+	border-left: 15px solid #ffffb7;
+}
+.PopupBTN:after{
+	border-right: 15px solid #ffffb7;
+}
+.PopupBTN:after {
+    bottom: auto;
+    top: 100%;
+    border-bottom: none;
+    border-top: 15px solid #ffffb7;
+}
+
+#CategoryBTN {
+    background: #313a45;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+#CategoryBTN:before , #CategoryBTN:after {
+     border-bottom: 15px solid #313a45;
+}
+#CategoryBTN:before{
+	border-left: 15px solid #313a45;
+}
+#CategoryBTN:after{
+	border-right: 15px solid #313a45;
+}
+#CategoryBTN:after {
+    bottom: auto;
+    top: 100%;
+    border-bottom: none;
+    border-top: 15px solid #313a45;
+}
+#CategoryBTN:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-filter.active {
+    background: #FFC16E !important;
+    color: #fff;
+}
+.product-filter.active:before {
+    border-bottom: 15px solid #FFB95C !important;
+}
+.product-filter.active:before{
+   border-left: 15px solid #FFB95C !important;
+}
+.product-filter.active:after{
+   border-right: 15px solid #FFB95C !important;
+}
+.product-filter.active:after {
+    bottom: auto;
+    top: 100%;
+    border-bottom: none;
+    border-top: 15px solid #FFB95C !important;
+}
+.product-filter.active:hover {
+    transform: translateY(0px) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REVIEWS  REVIEWS  REVIEWS    REVIEWS    REVIEWS */
+/* REVIEWS  REVIEWS  REVIEWS    REVIEWS    REVIEWS */
+/* REVIEWS  REVIEWS  REVIEWS    REVIEWS    REVIEWS */
+
+
+
+.ReviewsPage_reviewsList__K3psM {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 60px 30px;
+    margin-top: 60px;
+}
+.ReviewCard_reviewCard__bRFHC.undefined {
+    background: #ba771e;
+    color: #fff;
+    padding: 0px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header time {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    opacity: 0.5;
+}
+header.ReviewCard_cardHeader__HRfmF {
+    margin-bottom: 20px;
+}
+
+.ReviewCard_reviewCard__bRFHC.undefined:before, .ReviewCard_reviewCard__bRFHC.undefined:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    border-bottom: 15px solid #4b40e5;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.ReviewCard_reviewCard__bRFHC.undefined:before  {
+     border-bottom: 15px solid #ba771e !important;
+}
+.ReviewCard_reviewCard__bRFHC.undefined:before{
+	border-left: 15px solid #ba771e !important;
+}
+.ReviewCard_reviewCard__bRFHC.undefined:after{
+	border-right: 15px solid #ba771e !important;
+}
+.ReviewCard_reviewCard__bRFHC.undefined:after {
+    bottom: auto;
+    top: 100%;
+    border-bottom: none;
+    border-top: 15px solid #ba771e !important;
+}
+path.star {
+    fill: #ffffb7 !important;
+}
+
+.ReviewCard_security__TtDYw  {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.ReviewCard_security__TtDYw span {
+    font-weight: 700 !important;
+}
+.ReviewCard_security__TtDYw path {
+    fill: #fff;
+}
+
+
+@media (max-width: 700px) {
+
+    .ReviewsPage_reviewsList__K3psM {
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.h-64.flex.items-end.justify-start.bg-PrimaryColor\/\[0\.6\].relative.px-4.py-4.text-left:after {
+    content: "";
+    background: url(https://cdn.discordapp.com/attachments/1086661244716593282/1091472562099331092/8409d8117351161.png);
+    background-size: cover !important;
+    width: 300px;
+    height: 256px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+    z-index: 100000;
+}
+[data-product="[EUW] Inactive | 20 - 60 Champs | Level 30+"]:after {
+    background: url(https://media.discordapp.net/attachments/1086661244716593282/1091473854406344835/90b9cd149341393.png?width=386&height=686) !important;
+    width: 250px !important;
+    height: 324px !important;
+    top: -68px !important;
+    transform: scale(1) !important;
+}
+.bg-PrimaryColor\/\[0\.6\] {
+    background: linear-gradient(45deg, rgb(237 95 99 / 45%), rgb(111 6 9 / 81%)) , url(https://cdn.discordapp.com/attachments/1086661244716593282/1091476595119767552/abstract-organic-lines-background_1017-26669.png);
+    background-size: cover !important;
+    background-blend-mode: multiply;
+}
+span.w-6\/12.text-4xl.font-extrabold.block.FontTungsten {
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+    background: rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+  
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    right: 15px;
+  }
+  
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-left: 94%;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #ba771e;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu {
+    position: fixed;
+    width: 200px;
+    height: 110%;
+    margin: -100px 0 0 -25px;
+    padding-top: 175px;
+    background-color: #1d2126;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    right: 0;
+    transform: translate(300%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+  
+  #menu a
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+    color: #fff;
+  }
+  #menu .active {
+    color: #FFFFB7;
+  }
+  #menu a {
+    padding: 25px;
+    display: block;
+    font-weight: 800;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
